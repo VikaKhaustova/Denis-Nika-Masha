@@ -1,0 +1,86 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: linear-gradient(90deg, rgb(237, 237, 237),rgb(236, 236, 236)),linear-gradient(135deg, rgb(163, 125, 62) 0%, rgb(163, 125, 62) 22%,rgb(149, 100, 59) 22%, rgb(149, 100, 59) 32%,rgb(134, 75, 56) 32%, rgb(134, 75, 56) 37%,rgb(120, 50, 53) 37%, rgb(120, 50, 53) 51%,rgb(105, 25, 50) 51%, rgb(105, 25, 50) 55%,rgb(91, 0, 47) 55%, rgb(91, 0, 47) 100%),linear-gradient(112.5deg, rgb(163, 125, 62) 0%, rgb(163, 125, 62) 22%,rgb(149, 100, 59) 22%, rgb(149, 100, 59) 32%,rgb(134, 75, 56) 32%, rgb(134, 75, 56) 37%,rgb(120, 50, 53) 37%, rgb(120, 50, 53) 51%,rgb(105, 25, 50) 51%, rgb(105, 25, 50) 55%,rgb(91, 0, 47) 55%, rgb(91, 0, 47) 100%),linear-gradient(90deg, rgb(163, 125, 62) 0%, rgb(163, 125, 62) 22%,rgb(149, 100, 59) 22%, rgb(149, 100, 59) 32%,rgb(134, 75, 56) 32%, rgb(134, 75, 56) 37%,rgb(120, 50, 53) 37%, rgb(120, 50, 53) 51%,rgb(105, 25, 50) 51%, rgb(105, 25, 50) 55%,rgb(91, 0, 47) 55%, rgb(91, 0, 47) 100%); background-blend-mode:overlay, overlay, overlay, normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: blanchedalmond;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px darkred;
+}
+
+h1{
+    color:brown;
+}
+
+button{
+    background-color: rgb(255, 225, 0);
+    color: red;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: white;
+}
+
+.task-input, .date-picker{
+    width: 60%;
+    padding: 10px;
+    border: 1px orangered;
+    border-radius: 4px;
+}
+
+.task-screen, .add-task-screen{
+    display: none;
+}
+
+ul{
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+li{
+    background-color: rgb(248, 221, 188);
+    padding: 10px;
+    border: 1px solid rgb(255, 203, 119);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.delete{
+    background-color: rgb(200, 54, 54);
+}
+
+.delete:hover{
+    background-color: brown;
+}
+
+@media(orientation: portrait) and (max-wigh: 450px)
+{
+.container{
+    background-color: blanchedalmond;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    width: 90%;
+    max-width: 300px;
+    text-align: center;
+}
+
+h1{
+    font-size: 1.5em;
+}
+
+.delete{
+   width: 100px;
+}
+}
